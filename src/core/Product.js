@@ -35,10 +35,10 @@ const Product = ()=> {
     }, [useParams().productId])
 
     return (
-        <Layout title={product && product.name} description={product && product.description.substring(0, 100)} className="container-fluid">
+        <Layout title={product && product.name} description={`${product && product.description.substring(0, 100)}...`} className="container-fluid">
             <div className='row'>
                 <div className='col-8'>
-                    {product && product.description && <Card product={product} showViewButton={false}/>  }  
+                    {product && product.description && <Card product={product} showViewButton={false} showFullDescription={true}/>  }  
                 </div>
                 <div className='col-4'>
                     <h4 className='black-10'>Related Products</h4>

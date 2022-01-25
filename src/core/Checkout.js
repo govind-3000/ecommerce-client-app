@@ -50,7 +50,7 @@ const Checkout = ({products, setRun = f => f, run=undefined})=> {
                     {showDropin()}
                 </div>
             ) : (
-                <Link>
+                <Link to='/signin'>
                     <button className='btn btn-primary' >
                         Signin to checkout
                     </button>
@@ -101,10 +101,8 @@ const Checkout = ({products, setRun = f => f, run=undefined})=> {
         let getNonce = data.instance
         .requestPaymentMethod()
         .then(data=>{
-            // console.log(data);
             //once you have nonce(card type) send nonce and total amount to be charged
             nonce = data.nonce;
-            // console.log('nonce and total amount', nonce, getTotal(products));
             const paymentData = {
                 paymentMethodNonce: nonce,
                 amount: getTotal(products)

@@ -3,7 +3,14 @@ import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
 import { Link } from "react-router-dom";
 
-const {user:{name, email, role}} = isAuthenticated();
+let dummy = {
+    user: {
+        name:"dummy",
+        email:"dummy@gmail.com",
+        role:'0'
+    }
+}
+const {user:{name, email, role}} = isAuthenticated() ? isAuthenticated() : dummy;
 
 const AdminDashboard = () => {
 
