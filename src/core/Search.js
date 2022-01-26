@@ -26,12 +26,10 @@ const Search = () => {
 
     useEffect(()=> {
         loadCategories();
-        {showSearched(results)}
-
+        showSearched(results);
     }, []);
 
     const findResult = ()=> {
-        // if(search){
             listSearched({search: search || undefined, category: category}).then(res=>{
                 if(res.error){
                     console.log(res.error);
@@ -39,7 +37,6 @@ const Search = () => {
                     setData({...data, results: res, searched: true});
                 }
             })
-        // }
     }
 
     const handleSubmit = (event)=> {

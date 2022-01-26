@@ -9,7 +9,6 @@ const Product = ()=> {
     const [product, setProduct] = useState();
     const [relatedProducts, setRelatedProducts] = useState([]);
     const [error, setError] = useState();
-    // const  [id, setId] = useState(useParams().productId);
     let id = useParams().productId;
 
     const loadProduct = (productId)=> {

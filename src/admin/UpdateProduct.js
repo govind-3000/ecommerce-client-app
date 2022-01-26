@@ -174,7 +174,7 @@ const UpdateProduct = () => {
     }
 
     return (
-        <Layout title="Add a new Product" description={`Good day ${user.name}, please add a product`}>
+        <Layout title="Add a new Product" description={`Good day ${user.name}, please update product details`}>
                     <div className="row">
                         <div className="col-md-8 offset-md-2">
                             {showLoading()}
