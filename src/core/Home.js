@@ -37,7 +37,7 @@ const Home = () => {
     }, []);
 
     return (
-        <Layout title='Home' description='Welcome to shopCat!..' className="container-fluid">
+        <Layout title='Home' description='Welcome to ShopCat!..' className="container-fluid">
             <h2>{Search()}</h2>
             <h2 className='mb-4'>New Arrivals</h2>
             <div className='row'>

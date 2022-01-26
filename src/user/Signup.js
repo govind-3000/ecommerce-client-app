@@ -70,7 +70,7 @@ const Signup = () => {
     )
 
     return (
-    <Layout title='Signup' description='ecommerce Signup' className='container col-md-8 offset-md-2'>
+    <Layout title='Signup' description='Signup if you are a new user' className='container col-md-8 offset-md-2'>
         {showError()}
         {showSuccess()}
         {signUpForm()}

@@ -88,7 +88,7 @@ const Signin = () => {
     }
 
     return (
-    <Layout title='Signin' description='Signin to ecommerce app' className='container col-md-8 offset-md-2'>
+    <Layout title='Signin' description='Signin to ShopCat app' className='container col-md-8 offset-md-2'>
         {showLoading()}
         {showError()}
         {signInForm()}
