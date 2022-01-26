@@ -48,9 +48,9 @@ const ManageProducts = ()=> {
                                     <span className="badge badge-warning badge-pill ml-3 mr-3">Update</span>
                                 </Link>
 
-                                <span 
+                                <span
                                     onClick={()=> removeProduct(p._id)}
-                                    className="badge badge-danger badge-pill"
+                                    className="btn badge badge-danger badge-pill"
                                 >
                                 Delete
                                 </span>
