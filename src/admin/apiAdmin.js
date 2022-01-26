@@ -49,6 +49,17 @@ export const getCategories = () => {
     })
 }
 
+
+export const getCategory = categoryId => {
+    return fetch(`${API}/category/${categoryId}`, {
+        method: 'GET'
+    })
+        .then(response => {
+            return response.json();
+        })
+        .catch(err => console.log(err));
+};
+
 export const listOrders = (userId, token)=> {
     return fetch(`${API}/order/list/${userId}`, 
     {
@@ -167,3 +178,20 @@ export const deleteProduct = (userId, token, productId)=> {
         console.log(error)
     })
 }
+
+export const updateCategory = (categoryId, userId, token, category) => {
+    return fetch(`${API}/category/${categoryId}/${userId}`, {
+        method: 'PUT',
+        headers: {
+            // content type?
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+            Authorization: `Bearer ${token}`
+        },
+        body: JSON.stringify(category)
+    })
+        .then(response => {
+            return response.json();
+        })
+        .catch(err => console.log(err));
+};
