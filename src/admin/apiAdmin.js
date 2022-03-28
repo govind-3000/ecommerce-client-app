@@ -69,8 +69,8 @@ export const listOrders = (userId, token)=> {
             Authorization : `Bearer ${token}`
         }
     })
-    .then(orders=> {
-        return orders.json()
+    .then(response => {
+        return response.json()
     })
     .catch(error=>{
         console.log(error)
