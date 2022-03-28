@@ -38,7 +38,7 @@ const Cart = ()=> {
     );
 
     return (
-        <Layout title='Shopping Cart' description='Add items to your cart and choose your payment method' className="container-fluid">
+        <Layout title='Shopping Cart' description='You are one step away to have your favourite Cats at Home!.. Add Cats to your cart and choose your payment method' className="container-fluid">
             <div className='row'>
                 <div className='col-6'>
                     {items.length>0 ? showItems(items) : noItemsMessage()}

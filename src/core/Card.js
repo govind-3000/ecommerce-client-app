@@ -9,7 +9,7 @@ const Card = ({product,
     showAddToCartButton=true , 
     cartUpdate=false, 
     showRemoveProductButton=false,
-    setRun = f => f,//default value fo function
+    setRun = f => f,//default value of function
     run = undefined,
     showFullDescription=false
     })=> {
