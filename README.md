@@ -4,7 +4,7 @@
 
 * ShopCat's frontend is implemented with ReactJS, backend is built using NodeJS and Express used as a backend framework,
 
-*This application uses flexible Private and Admin Routing System, that enables Admin to manage products and orders.
+* This application uses flexible Private and Admin Routing System, that enables Admin to manage products and orders.
 Admin can also change the order status.
 
 * This application also uses Authentication feature which is based on JWT, 
